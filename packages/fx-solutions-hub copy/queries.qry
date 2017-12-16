@@ -1,0 +1,27 @@
+
+query selectCurrencies {
+  description: "Select all currencies"
+  statement:
+      SELECT fx.solutions.hub.Currency
+}
+
+query selectCurrenciesByExchange {
+  description: "Select all currencies based on their venue"
+  statement:
+      SELECT fx.solutions.hub.Currency
+          WHERE (venue==_$venue)
+}
+
+query selectCurrenciesByOwner {
+  description: "Select all currencies based on their owner"
+  statement:
+      SELECT fx.solutions.hub.Currency
+          WHERE (owner == _$owner)
+}
+
+query selectCurrenciesWithHighQuantity {
+  description: "Select currencies based on quantity"
+  statement:
+      SELECT fx.solutions.hub.Currency
+          WHERE (quantity > 60)
+}

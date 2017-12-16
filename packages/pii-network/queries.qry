@@ -1,6 +1,0 @@
-
-query selectMembers {
-  description: "Select all members"
-  statement:
-      SELECT org.acme.pii.Member
-}
