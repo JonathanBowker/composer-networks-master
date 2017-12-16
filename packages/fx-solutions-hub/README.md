@@ -1,4 +1,4 @@
-# Trade Network
+# FX Solutions Hub
 
 > This Business Network illustrates currency trading.
 
