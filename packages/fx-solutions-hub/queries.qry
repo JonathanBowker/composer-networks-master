@@ -6,10 +6,10 @@ query selectCurrencies {
 }
 
 query selectCurrenciesByExchange {
-  description: "Select all currencies based on their main exchange"
+  description: "Select all currencies based on their venue"
   statement:
       SELECT fx.solutions.hub.Currency
-          WHERE (mainExchange==_$exchange)
+          WHERE (venue==_$venue)
 }
 
 query selectCurrenciesByOwner {

@@ -96,11 +96,11 @@ describe('Currency Trading', () => {
             const factory = businessNetworkConnection.getBusinessNetwork().getFactory();
 
             // create the traders
-            const dan = factory.newResource(namespace, 'Trader', 'dan@EURil.com');
+            const dan = factory.newResource(namespace, 'Trader', 'dan@gmail.com');
             dan.firstName = 'Dan';
             dan.lastName = 'Selman';
 
-            const simon = factory.newResource(namespace, 'Trader', 'simon@email.com');
+            const simon = factory.newResource(namespace, 'Trader', 'simon@gmail.com');
             simon.firstName = 'Simon';
             simon.lastName = 'Stone';
 
