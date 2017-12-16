@@ -27,8 +27,8 @@ event TradeNotification {
 }
 
 
-/** transaction RemoveHighQuantityCurrencies {
-} */
+transaction RemoveHighQuantityCurrencies {
+}
 
 event RemoveNotification {
     --> Currency currency
