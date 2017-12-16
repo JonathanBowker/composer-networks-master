@@ -3,7 +3,8 @@
  */
 namespace fx.solutions.hub
 
-asset Currency identified by currencyCode {
+asset Currency identified by currencyId {
+    o String currencyId
     o String currencyCode
     o String description
     o String venue
