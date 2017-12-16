@@ -1,0 +1,36 @@
+/**
+ * Currency trading network
+ */
+namespace fx.solutions.hub
+
+asset Currency identified by currencyCode {
+    o String currencyCode
+    o String description
+    o String venue
+    o Double quantity
+    --> Trader owner
+}
+
+participant Trader identified by tradeId {
+    o String tradeId
+    o String firstName
+    o String lastName
+}
+
+transaction Trade {
+    --> Currency currency
+    --> Trader newOwner
+}
+
+event TradeNotification {
+    --> Currency currency
+}
+
+transaction RemoveHighQuantityCommodities {
+}
+
+event RemoveNotification {
+    --> Currency currency
+}
+
+
