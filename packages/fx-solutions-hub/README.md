@@ -43,7 +43,7 @@ Create a `Currency` asset:
 ```
 {
   "$class": "fx.solutions.hub.Currency",
-  "tradingSymbol": "EUR",
+  "currencyCode": "EUR",
   "description": "Euro",
   "mainExchange": "FXGO",
   "quantity": 72.297,
