@@ -2,13 +2,13 @@
     "engines": {
         "composer": "^0.17.0"
     },
-    "name": "trade-network",
+    "name": "fx-solutions-hub",
     "version": "0.1.14",
     "description": "Currencies Trading Business Network",
-    "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/trade-network/networkimage.svg",
-    "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/trade-network/networkimageanimated.svg",
+    "networkImage": "https://github.com/JonathanBowker/composer-networks-master/tree/master/packages/fx-solutions-hub/networkimage.svg",
+    "networkImageanimated": "https://github.com/JonathanBowker/composer-networks-master/tree/master/packages/fx-solutions-hub/networkimageanimated.svg",
     "scripts": {
-        "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/trade-network.bna",
+        "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/fx-solutions-hub.bna",
         "pretest": "npm run lint",
         "lint": "eslint .",
         "postlint": "npm run licchk",
@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/JonathanBowker/composer-sample-networks.git"
+        "url": "https://github.com/JonathanBowker/composer-networks.git"
     },
     "keywords": [
         "currencies",
