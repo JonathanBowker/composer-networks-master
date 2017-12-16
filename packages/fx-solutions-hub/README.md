@@ -56,7 +56,7 @@ Submit a `Trade` transaction:
 ```
 {
   "$class": "fx.solutions.hub.Trade",
-  "currency": "resource:fx.solutions.hub.Currency#ABC",
+  "currency": "resource:fx.solutions.hub.Currency#GBR",
   "newOwner": "resource:fx.solutions.hub.Trader#TRADER2"
 }
 ```
